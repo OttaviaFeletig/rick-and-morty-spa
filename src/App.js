@@ -73,7 +73,7 @@ class App extends React.Component {
   }
   findCharacter(selectedId) {
     return this.state.characters.filter((character) => {
-      return character.id == selectedId;
+      return character.id === parseInt(selectedId);
     });
   }
   render() {
